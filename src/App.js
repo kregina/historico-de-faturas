@@ -6,10 +6,12 @@ import {
 import './index.css';
 
 import Navigation from './components/Navigation';
+import Carousel from './components/Carousel';
 
 const App = () => (
   <Router>
     <Navigation />
+    <Carousel />
   </Router>
 );
 export default App;
