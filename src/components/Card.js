@@ -1,6 +1,8 @@
 import React from 'react';
 import css from 'styled-components';
 
+import Chip from './Chip';
+
 const Div = css.div`
     background-color: #fff;
 `;
@@ -8,20 +10,22 @@ const Div = css.div`
 const Small = css.small`
     color: #787878;
     text-transform: uppercase;
-    font-weight: 400;
 `;
 
 const Card = () => (
     <Div className="overflow-hidden p-4">
-        <div className="flex">
-            <div className="font-bold text-xl mb-2 ">
-                Fatura
-                <Small className="ml-2">Dez 20</Small>
+        <div className="flex justify-between items-center">
+            <div>
+                <span className=" text-3xl">Fatura</span>
+                <Small className="ml-2 text-xl">Dez 20</Small>
             </div>
+            <Chip />
         </div>
-        <p className="text-gray-700 text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-        </p>
+        <div className="mt-12">
+            <p className="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+        </div>
     </Div>
 );
 

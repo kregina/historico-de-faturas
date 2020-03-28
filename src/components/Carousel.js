@@ -12,7 +12,7 @@ const Ul = css.ul`
 `;
 
 const Li = css.li`
-    width: 65vw;
+    width: 70vw;
     position: relative;
     right: -3.3rem;
 `;
