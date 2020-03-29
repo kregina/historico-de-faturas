@@ -8,7 +8,7 @@ const Span = css.span`
 `;
 
 const Chip = () => (
-    <Span className="inline-block px-2 py-1">fandangos</Span>
+    <Span className="inline-block px-2 py-1 text-sm">Em atraso</Span>
 );
 
 export default Chip;

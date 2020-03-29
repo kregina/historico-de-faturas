@@ -1,3 +1,9 @@
+/* CSS variables */
+:root {
+    --color-primary: #00E96F;
+    --color-primar-dark: #02C45A;
+}
+
 /* Init Tailwind */
 @tailwind base;
 
