@@ -1,7 +1,9 @@
 /* CSS variables */
 :root {
     --color-primary: #00E96F;
-    --color-primar-dark: #02C45A;
+    --color-primary-dark: #02C45A;
+    --color-warn: #EF4056;
+    --color-secondary: #9808FF;
 }
 
 /* Init Tailwind */
@@ -18,4 +20,33 @@
 body {
     background-color: #F7F7F7;
     font-family: 'Roboto', sans-serif;
+}
+
+#root{
+    width: 414px;
+    margin: 0 auto;
+}
+
+.bg-atrasado {
+    background-color: var(--color-warn);
+}
+
+.bg-pago {
+    background-color: var(--color-primary-dark);
+}
+
+.bg-aberta {
+    background-color: var(--color-secondary);
+}
+
+.text-atrasado {
+    color: var(--color-warn);
+}
+
+.text-pago {
+    color: var(--color-primary-dark);
+}
+
+.text-aberta {
+    color: var(--color-secondary);
 }
