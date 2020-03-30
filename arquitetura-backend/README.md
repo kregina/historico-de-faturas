@@ -42,3 +42,9 @@ Esse arquivo foi criado com o intuito de expressar uma sugestão para o backend 
     - consultar dados do mês
     - calcular total
     - persistir dados
+
+# Tecnologias sugeridas
+
+- [AWS Lambda function](https://aws.amazon.com/lambda/)
+- [AWS PostgreSQL](https://aws.amazon.com/rds/postgresql/)
+- [Nodejs](https://nodejs.dev/)
