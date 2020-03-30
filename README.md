@@ -13,7 +13,7 @@ Nota: como requisito esse projeto foi criado para mobile, para uma melhor experi
 
 ### Features:
 
-- **Geris**
+- **Gerais**
   - Mobile first
   - Pixel perfect.
   - Responsive design.
