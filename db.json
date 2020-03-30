@@ -3,24 +3,24 @@
         "id": 1, 
         "dataFatura": "2020-01-20T00:00:00.000Z", 
         "status": "aberta",
-        "megabitesUtilizados": "306",
+        "megabitesUtilizados": 306,
         "dataVencimento": "2020-05-02T00:00:00.000Z",
-        "valor": "4,65"
+        "valor": 4.65
     },
     {
         "id": 2, 
         "dataFatura": "2019-12-20T00:00:00.000Z", 
         "status": "Em Atraso",
-        "megabitesUtilizados": "2.377",
+        "megabitesUtilizados": 2.377,
         "dataVencimento": "2020-05-01T00:00:00.000Z",
-        "valor": "41,19"
+        "valor": 41.19
     },
     {
         "id": 3, 
         "dataFatura": "2019-11-20T00:00:00.000Z", 
         "status": "Pago",
-        "megabitesUtilizados": "2.958",
+        "megabitesUtilizados": 2.958,
         "dataVencimento": "2020-05-12T00:00:00.000Z",
-        "valor": "47,32"
+        "valor": 47.32
     }]
 }

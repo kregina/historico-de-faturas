@@ -17,12 +17,18 @@ const PaymentBtn = css.button`
     text-transform: uppercase;
 `;
 
-const Card = () => (
+const Card = (props) => {
+    console.log(props);
+
+    const dataFatura = Date.parse(props.fatura.dataFatura);
+
+    return (
+    
     <Div className="overflow-hidden p-4">
         <div className="flex justify-between items-center">
             <div>
                 <span className="text-2xl">Fatura</span>
-                <Label className="ml-2 text-lg">Dez 20</Label>
+                <Label className="ml-2 text-lg">{dataFatura}</Label>
             </div>
             <Chip />
         </div>
@@ -49,6 +55,6 @@ const Card = () => (
             <PaymentBtn type="button" className="">Efetuar paragamento</PaymentBtn>
         </div>
     </Div>
-);
+)};
 
 export default Card;
