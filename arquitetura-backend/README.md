@@ -46,5 +46,5 @@ Esse arquivo foi criado com o intuito de expressar uma sugestão para o backend 
 # Tecnologias sugeridas
 
 - [AWS Lambda function](https://aws.amazon.com/lambda/)
-- [AWS PostgreSQL](https://aws.amazon.com/rds/postgresql/)
+- [AWS DynamoDB](https://aws.amazon.com/dynamodb/)
 - [Nodejs](https://nodejs.dev/)
