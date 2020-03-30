@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
     BrowserRouter as Router,
   } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 import * as FaturasService from "../services/faturas-service";
   
@@ -30,6 +31,10 @@ const Layout = () => {
 
     return (
         <Router>
+            <Helmet>
+                <title>Histórico de Faturas</title>
+            </Helmet>
+
             <Navigation />
             {redenderView}
         </Router>
