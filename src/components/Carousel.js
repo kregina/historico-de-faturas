@@ -1,35 +1,36 @@
 import React from 'react';
-import css from 'styled-components';
+import Flickity from 'react-flickity-component'
 
 import Card from './Card';
 
-const Div = css.div`
-    overflow-x: scroll;
-`;
+const flickityOptions = {
+    draggable: true
+}
 
-const Ul = css.ul`
-    width: 1200px;
-`;
+const Carousel = (props) => {
+    let flickity;
 
-const Li = css.li`
-    width: 70vw;
-    position: relative;
-    right: -3.3rem;
-`;
+    const onFlickityInit = (ref) => {
+        flickity = ref;
+        flickity.on('staticClick', function( event, pointer, cellElement, cellIndex ) {
+            flickity.select(cellIndex)
+        });
+    };
 
-const Carousel = (props) => {    
-    const faturasItems = props.faturas.map(fatura => 
-        <Li key={fatura.id.toString()} className="mx-4">
-            <Card fatura={fatura} />
-        </Li>
+    const faturasItems = props.faturas.map((fatura, i) => 
+        <Card 
+            key={fatura.id.toString()} 
+            className="mx-4" 
+            fatura={fatura}
+        />
     );
 
-    return (        
-        <Div>
-            <Ul className="flex my-10">
-               {faturasItems}                
-            </Ul>
-        </Div>
-)};
+    return (      
+        <Flickity flickityRef={onFlickityInit}
+            options={flickityOptions} className="my-10">
+            {faturasItems}
+        </Flickity>
+    )
+};
 
 export default Carousel;

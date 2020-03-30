@@ -8,6 +8,7 @@ import Chip from './Chip';
 const Div = css.div`
     background-color: #fff;
     min-height: 405px;
+    width: 70vw;
 `;
 
 const Label = css.small`
@@ -40,7 +41,7 @@ const Card = (props) => {
         : null;
 
     return (    
-        <Div className="overflow-hidden p-4">
+        <Div className="overflow-hidden p-4 mx-3">
             <div className="flex justify-between items-center">
                 <div>
                     <span className="text-2xl">Fatura</span>

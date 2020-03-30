@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "date-fns": "^2.11.1",
+    "flickity": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-flickity-component": "^3.5.0",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",
     "styled-components": "^5.0.1",
