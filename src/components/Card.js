@@ -35,7 +35,7 @@ const Card = (props) => {
         minimumFractionDigits: 2
     });
 
-    const showPagamentoBtn = (props.fatura.status.codigo != "PAGO") 
+    const showPagamentoBtn = (props.fatura.status.codigo !== "PAGO") 
         ? <PaymentBtn type="button">Efetuar paragamento</PaymentBtn>
         : null;
 

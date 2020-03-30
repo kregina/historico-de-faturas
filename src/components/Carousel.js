@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import css from 'styled-components';
 
 import Card from './Card';
@@ -17,25 +17,8 @@ const Li = css.li`
     right: -3.3rem;
 `;
 
-const Carousel = () => {
-    const [faturas, setFaturas] = useState([]);
-    const [errors, setErrors] = useState(false);
-    const BASE_URL = "http://localhost:4000"
-
-
-    async function fetchData() {
-        const res = await fetch(`${BASE_URL}/faturas`);
-        res
-            .json()
-            .then(res => setFaturas(res))
-            .catch(err => setErrors(err));
-    };
-
-    useEffect(() => {
-        fetchData()
-    }, []);
-
-    const faturasItems = faturas.map(fatura => 
+const Carousel = (props) => {    
+    const faturasItems = props.faturas.map(fatura => 
         <Li key={fatura.id.toString()} className="mx-4">
             <Card fatura={fatura} />
         </Li>
